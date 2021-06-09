@@ -10,7 +10,7 @@ func main() {
 
 	// "for" loop without "init" and "post"
 	for sum < 10 {
-		sum += sum
+		sum += sum // sum = sum + sum
 		fmt.Println(sum)
 	}
 

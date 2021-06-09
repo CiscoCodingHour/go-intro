@@ -22,7 +22,7 @@ func calc(x int, y int) (a int, b string) {
 
 func main() {
 
-	total, info := calc(15, 5)
+	total, info := calc(-5, 5)
 
 	fmt.Println("========================================")
 	fmt.Printf("The result was: %v \n", total)

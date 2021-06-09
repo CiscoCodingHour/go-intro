@@ -50,6 +50,7 @@
 <p>&nbsp;</p>
 
 - "Golang" is a nickname. "Go" is the official name.
+- Designed at __Google__ by _Robert Griesemore_, _Rob Pike_ and _Ken Thompson_.
 - __Statically typed__.
 - __Compiled__
 - Syntactically "similar" to C. 
@@ -124,7 +125,7 @@ func main() {
 }
 ```
 - Import name vs Import path.
-- Example below shows the import path reveals the directory path where rand package is located.
+- Example below shows that the import path reveals the directory path where "rand" package is located.
 
 ![ImportPath](https://github.com/rabocse/go-intro/blob/dev/pictures/ImportPath.png) 
 
@@ -222,6 +223,11 @@ func main() {
 }
 
 ```
+- The blank identifier could be used in case of wanting to ignore one return value: 
+  
+  ```go
+   total, _ := calc(-5, 5) 
+   ```
 
 ![MultipleOutputs](https://github.com/rabocse/go-intro/blob/dev/pictures/MultipleOutputs.png)
 
@@ -600,16 +606,43 @@ func main() {
 
 	for number := 0; number < 10; number++ {
 
-		sum += number // sum = sum + i
-
 		fmt.Println(number)
+
+		sum = sum + number // sum += number
+
 	}
 
-	fmt.Println("=============== SUM ===========================")
+	fmt.Println("=============== SUM ============================")
 	fmt.Println(sum)
 
 }
 ```
+<p>&nbsp;</p>
+
+__For Structure:__
+
+ _for_ __INIT__ ; __CONDITION__; __POST__
+
+- __INIT__: Executed before the first iteration
+- __CONDITION__: Evaluated before every iteration
+- __POST__: Executed at the end of every iteration
+  
+  <p>&nbsp;</p>
+
+__Inside the loop:__
+
+- sum = 0  +  1
+- sum = 1  +  2
+- sum = 3  +  3
+- sum = 6  +  4
+- sum = 10 +  5
+- sum = 15 +  6
+- sum = 21 +  7
+- sum = 28 +  8
+- sum = 36 +  9
+- sum = 45
+
+
 <p>&nbsp;</p>
 
 
@@ -628,7 +661,7 @@ func main() {
 	sum := 1
 
 	for sum < 10 {
-		sum += sum
+		sum += sum // sum = sum + sum 
 		fmt.Println(sum)
 	}
 
@@ -636,6 +669,14 @@ func main() {
 	fmt.Println(sum)
 }
 ```
+ <p>&nbsp;</p>
+
+__Inside the loop:__
+
+- sum = 1 + 1 = 2
+- sum = 2 + 2 = 4
+- sum = 4 + 4 = 8
+- sum = 8 + 8 = 16
 
 <p>&nbsp;</p>
 
@@ -780,7 +821,7 @@ func main() {
 
 	number := 500
 
-	switch false {
+	switch true {
 
 	case number < 100:
 		fmt.Println("The number is less than 100")
