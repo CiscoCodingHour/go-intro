@@ -1,5 +1,5 @@
 
-![Intro to Go](https://github.com/rabocse/go-intro/blob/dev/pictures/IntroToGo.png)    
+![Intro to Go](pictures/IntroToGo.png)    
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
