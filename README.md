@@ -127,7 +127,7 @@ func main() {
 - Import name vs Import path.
 - Example below shows that the import path reveals the directory path where "rand" package is located.
 
-![ImportPath](https://github.com/rabocse/go-intro/blob/dev/pictures/ImportPath.png) 
+![ImportPath](pictures/ImportPath.png) 
 
 <p>&nbsp;</p>
    
@@ -152,7 +152,7 @@ func main() {
 - Notice how all the first letters from the constants are capitalized in const.go.
 - If changed to "pi" (instead of "Pi"), the constant would become _unexported_.
 
-![ExportedPi](https://github.com/rabocse/go-intro/blob/dev/pictures/ExportedPi.png)
+![ExportedPi](pictures/ExportedPi.png)
 
 <p>&nbsp;</p>
 
@@ -180,7 +180,7 @@ func main() {
 
 
 ```
-![ClassicFunction](https://github.com/rabocse/go-intro/blob/dev/pictures/ClassicFunction.png)
+![ClassicFunction](pictures/ClassicFunction.png)
 
 <p>&nbsp;</p>
 
@@ -229,7 +229,7 @@ func main() {
    total, _ := calc(-5, 5) 
    ```
 
-![MultipleOutputs](https://github.com/rabocse/go-intro/blob/dev/pictures/MultipleOutputs.png)
+![MultipleOutputs](pictures/MultipleOutputs.png)
 
 <p>&nbsp;</p>
 
