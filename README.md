@@ -36,7 +36,7 @@
     - switch.go
     - functions.go
         - blank-identifier.go
-        - error-handling.go // <--------------------------------------------- ???
+        - error-handling.go
     - defer.go
     - stacking.defers.go
     - blank-indentifier.go
