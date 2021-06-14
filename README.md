@@ -36,9 +36,10 @@
     - switch.go
     - functions.go
         - blank-identifier.go
-        - error-handling.go // NOT DEFINED !!!!!!!!!!!!!
+        - error-handling.go // <--------------------------------------------- ???
     - defer.go
     - stacking.defers.go
+    - blank-indentifier.go
 	
 
 <p>&nbsp;</p>
@@ -75,7 +76,7 @@ import "fmt"
 
 func main() {
 
-	fmt.Println("Hello, Hola")
+	fmt.Println("Hello, World")
 }
 ```
 &nbsp;
@@ -124,7 +125,7 @@ func main() {
 	fmt.Printf("Now you have %g problems. \n ", math.Sqrt(16)) 
 }
 ```
-- Import name vs Import path.
+- package name vs Import path.
 - Example below shows that the import path reveals the directory path where "rand" package is located.
 
 ![ImportPath](pictures/ImportPath.png) 
@@ -147,7 +148,6 @@ func main() {
 	fmt.Println(math.Pi)
 }
 
-
 ```
 - Notice how all the first letters from the constants are capitalized in const.go.
 - If changed to "pi" (instead of "Pi"), the constant would become _unexported_.
@@ -160,7 +160,6 @@ __functions.go__
 
 
 ```go
-
 package main
 
 import (
@@ -444,7 +443,6 @@ func main() {
 
 	fmt.Printf("The variable \"value\" is of type: %T \n", value)
 }
-
 
 ```
 
