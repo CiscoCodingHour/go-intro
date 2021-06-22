@@ -35,7 +35,6 @@
         - if-with-a-short-declartion.go
     - switch.go
     - functions.go
-        - blank-identifier.go
     - defer.go
     - stacking.defers.go
     - blank-indentifier.go
