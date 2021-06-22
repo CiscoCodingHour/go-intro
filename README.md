@@ -944,7 +944,7 @@ func main() {
 <p>&nbsp;</p>
 
 
-__Defer (pending)__
+__defer.go__
 
 ```go
 package main
@@ -960,7 +960,7 @@ func main() {
 ```
 <p>&nbsp;</p>
 
-__Stacking defers__
+__stacking_defers.go__
 
 ```go
 package main
@@ -981,7 +981,7 @@ func main() {
 }
 ```
 
-__Blank Identifier__
+__blank-Identifier.go__
 
 ```go
 package main
