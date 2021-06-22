@@ -11,7 +11,7 @@
 
 - Go (Golang)
 - Basics:
-	- [hello.go](__hello.go__)
+	- hello.go
 	- packages.go
 	- imports.go
 	- exported-name.go
