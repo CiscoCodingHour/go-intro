@@ -14,7 +14,7 @@ func main() {
 
 	result1 := value1 + value2
 
-	result2 := value1 + int(value3) // Remove the conversion for value3 and the program will not compile.
+	result2 := float32(value1) + value3 // Remove the conversion for value3 and the program will not compile.
 
 	fmt.Println(result1)
 	fmt.Println(result2)

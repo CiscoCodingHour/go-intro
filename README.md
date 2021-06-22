@@ -551,7 +551,7 @@ func main() {
 
 	result1 := value1 + value2
 
-	result2 := value1 + int(value3) // Remove the conversion for value3 and the program will not compile.
+	result2 := float32(value1) + value3 // Remove the conversion for value3 and the program will not compile.
 
 	fmt.Println(result1)
 	fmt.Println(result2)
@@ -645,7 +645,7 @@ __Inside the loop:__
 
 
 
-__for-continued.go__
+__for-continued.go - More about the "for" loop__
 
 ```go
 package main
@@ -678,7 +678,7 @@ __Inside the loop:__
 
 <p>&nbsp;</p>
 
-__while.go__
+__while.go - There is no "while" keyword in Go !__
 
 ```go
 package main
