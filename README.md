@@ -449,9 +449,6 @@ func main() {
 <p>&nbsp;</p>
 
 __basic-types.go__
-
-// Use a more adecuate Rune example instead of 'K'. Also explain why '' instead of "".
-
 ```go
 package main
 
