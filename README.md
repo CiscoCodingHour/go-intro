@@ -47,7 +47,7 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-
+---
 ## __Go(Golang)__
 ---
 <p>&nbsp;</p>
@@ -62,8 +62,10 @@
 - ["Go is the most _pythonic_ language"](https://www.youtube.com/watch?v=aYbNh3NS7jA&t=1471s) By Guido van Rossum (Inventor of Python)
 
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 
 
+---
 ## __Compile and Execute__
 ---
 <p>&nbsp;</p>
@@ -98,6 +100,7 @@ go.mod  hello.go
 
 <p>&nbsp;</p>
 
+<p>&nbsp;</p>
 
 
 __go build__
@@ -120,6 +123,8 @@ Hello, World
 ```
 <p>&nbsp;</p>
 
+<p>&nbsp;</p>
+
 __go run__
 
 The _go run_ command compiles and executes based on the specified source code. 
@@ -135,9 +140,14 @@ Unlike _go build_ a executable is __not__ created.
 Hello, World
 ```
 <p>&nbsp;</p>
+<p>&nbsp;</p>
+
+---
 ## __1-Basics__
 ---
+
 <p>&nbsp;</p>
+
 
 __hello.go__
 
