@@ -85,7 +85,7 @@ go: creating new go.mod: module github.com/rabocse/go-intro-1/1-basics/0.0-hello
 go: to add module requirements and sums:
         go mod tidy
 ```
-Notice the that _go.mod_ was created.
+Notice that _go.mod_ was created.
 ```
 λ ls 
 go.mod  hello.go
