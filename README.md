@@ -10,6 +10,10 @@
 <p>&nbsp;</p>
 
 - Go (Golang)
+- Compile and Execute
+	- go mod
+	- go run
+	- go build
 - Basics:
 	- hello.go
 	- packages.go
@@ -43,8 +47,8 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
----
-## __0-Go(Golang)__
+
+## __Go(Golang)__
 ---
 <p>&nbsp;</p>
 
@@ -59,7 +63,78 @@
 
 <p>&nbsp;</p>
 
+
+## __Compile and Execute__
 ---
+<p>&nbsp;</p>
+
+Multiple tools are coming with Go's installation. Here are just a couple of them that will be required to start to work with Go source code:
+
+<p>&nbsp;</p>
+
+__go mod init__ 
+
+The _go mod init_ command creates a go.mod file to track your code's dependencies. Initially the file includes only the name of your module and the Go version your code supports. But as you add dependencies, the go.mod file will list the versions your code depends on.
+
+```
+C:\Users\aleescob\code\go\src\github.com\rabocse\go-intro-1\1-basics\0.0-hello
+λ go mod init
+go: creating new go.mod: module github.com/rabocse/go-intro-1/1-basics/0.0-hello
+go: to add module requirements and sums:
+        go mod tidy
+```
+Notice the that _go.mod_ was created.
+```
+λ ls 
+go.mod  hello.go
+```
+
+["Official doc: Create a Module"](https://golang.org/doc/tutorial/create-module)
+
+["Youtube: Everything about Go Modules"](https://www.youtube.com/watch?v=Z1VhG7cf83M)
+
+["Official doc: Modules Are On by Default"](https://blog.golang.org/go116-module-changes)
+
+
+<p>&nbsp;</p>
+
+
+
+__go build__
+
+The _go build_ command compiles and creates an executable file based on the specified source code. 
+
+```
+C:\Users\aleescob\code\go\src\github.com\rabocse\go-intro-1\1-basics\0.0-hello
+λ go build hello.go 
+```
+
+``` 
+λ ls
+go.mod  hello.exe*  hello.go
+```
+Then, the created file can be executed.
+```
+λ .\hello.exe 
+Hello, World
+```
+<p>&nbsp;</p>
+
+__go run__
+
+The _go run_ command compiles and executes based on the specified source code. 
+
+```
+C:\Users\aleescob\code\go\src\github.com\rabocse\go-intro-1\1-basics\0.0-hello
+λ ls
+go.mod  hello.go
+```
+Unlike _go build_ a executable is __not__ created.
+```
+λ go run hello.go 
+Hello, World
+```
+<p>&nbsp;</p>
 ## __1-Basics__
 ---
 <p>&nbsp;</p>
@@ -579,7 +654,7 @@ func main() {
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
----
+
 ## __2-Flowcontrol__
 ---
 <p>&nbsp;</p>
