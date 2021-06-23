@@ -134,7 +134,7 @@ C:\Users\aleescob\code\go\src\github.com\rabocse\go-intro-1\1-basics\0.0-hello
 λ ls
 go.mod  hello.go
 ```
-Unlike _go build_ a executable is __not__ created.
+Unlike _go build_ an executable is __not__ created.
 ```
 λ go run hello.go 
 Hello, World
